@@ -1,5 +1,5 @@
 body {
-    background-color: #ADD8E6;
+    background-color: rgb(7, 43, 105);
     display: block;
 }
 .background {
@@ -20,10 +20,11 @@ body {
 .card {
     background-color: white;
     border-radius: 1.25rem 1.25rem 1.25rem 0;
-    max-width: 28rem;
+    max-width: 35rem;
     padding: 2rem;
     padding-bottom: 2.5rem;
     width: 70%;
+    margin-bottom: 2rem;
 }
 .header {
     margin-bottom: 1.5rem;
@@ -31,21 +32,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-.header h1 {
+.header h3 {
     color: #083e9e;
     font-size: 1.25rem;
     text-align: center;
     font-weight: 600;
     font-family: sans-serif;
     margin-bottom: 0.3rem;
-}
-.header p {
-    color: #4a5568;
-    font-size: .75rem;
-    text-align: center;
-    font-family: sans-serif;
-    margin: 0;
-
 }
 form {
     overflow-y: auto;
@@ -64,26 +57,25 @@ form {
     font-family: Tahoma, Verdana, sans-serif;
 }
 .form-label{
-    font-size: .8rem;
-    color: #4a5568;
+    font-size: 1rem;
+    color: #141b27;
     margin-bottom: .25rem;
     line-height: 2;
     font-weight: 700;
     font-family: sans-serif;
 }
 .form-input {
-    color: #40444d;
+    color: #32353d;
     padding-left: .75rem;
     padding-right: .5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     outline: 0px;
-    background-color: #edf2f7;
+    background-color: #e7ebf0;
     border-radius: .25rem;
     overflow: visible;
     border: 0px solid;
     font-size: 1rem;
-    color: ;
 
 }
 .button {
@@ -112,25 +104,4 @@ button {
 }
 button:hover {
     background-color: rgb(6, 43, 111);
-}
-
-.login-option a {
-    color: white;
-    font-size: .75rem;
-    text-align: center;
-    padding-left: .75rem;
-    padding-right: .75rem;
-    padding-top: .25rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    text-decoration: none;
-}
-.login-option a:hover {
-    color: rgb(179, 179, 179);
 }
