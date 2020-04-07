@@ -3,72 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid 19 Estimator Data Input</title>
     <link rel="stylesheet" href="style.css">
-    <title>First Web Page</title>
 </head>
 <body>
     <div class="background">
         <div class="logo">
-            <h1>piggyvest</h1>
+            <h1>COVID 19 DATA INPUT</h1>
         </div>
         <div class="card">
             <div class="header">
-                <h1>Create a Secure Account</h1>
-                <p>Welcome to the future of Savings & Investments</p>
+                <h3>Pass in data for the Covid 19 Estimator function</h3>
             </div>
 
             <form action="">
                 <div class="container">
                     <div class="form-group">
-                        <label class="form-label" for="name">Full Name</label>
-                        <input class="form-input" type="text" placeholder="Full Name" name="name" required>
+                        <label class="form-label" for="region">Region</label>
+                        <select id="region" class="form-input data-region" aria-placeholder="Click to Select" required aria-required="true">
+                            <option value="Africa">Africa</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Caribbean">Caribbean</option>
+                            <option value="Central America">Central America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="Oceania">Oceania</option>
+                            <option value="South America">South America</option>
+                        </select>
                     </div>
+
                     <div class="form-group">
-                        <label class="form-label" for="email">Email Address</label>
-                        <input class="form-input" type="email" placeholder="Email Address" name="email" required>
+                        <label class="form-label" for="country">Country</label>
+                        <input class="form-input data-country" type="text" placeholder="Country" name="country" required aria-required="true">
                     </div>
+
                     <div class="form-group">
-                        <label class="form-label" for="phone">Phone Number</label>
-                        <input class="form-input" type="tel" placeholder="Phone Number" name="phone" required>
+                        <label class="form-label" for="population">Population</label>
+                        <input class="form-input data-population" type="number" placeholder="Population" name="population" required aria-required="true">
                     </div>
+
                     <div class="form-group">
-                        <label class="form-label" for="password">Password</label>
-                        <input class="form-input" type="password" placeholder="Password" name="password" required>
+                        <label class="form-label" for="time-to-elapse">Time to Elapse (in days, weeks or months)</label>
+                        <input class="form-input data-time-to-elapse" type="number" placeholder="Time to Elapse" name="time-to-elapse" required aria-required="true">
                     </div>
+                    
                     <div class="form-group">
-                        <label class="form-label" for="code">Referrer Phone or Promo Code (Optional)</label>
-                        <input class="form-input" type="text" placeholder="Referrer Phone or Code" name="code" required>
+                        <label class="form-label" for="period-type">Period type (Days, weeks or months)</label>
+                        <select id="period-type" class="form-input data-period-type" placeholder="Click to Select" required aria-required="true">
+                            <option value="days">days</option>
+                            <option value="weeks">weeks</option>
+                            <option value="months">months</option>
+                        </select>
                     </div>
+
                     <div class="form-group">
-                        <label class="form-label" for="media">How Did You Hear About Us? (Optional)</label>
-                        <input list="media" class="form-input" placeholder="Click to Select">
-                        <datalist id="media">
-                            <option value="Facebook">
-                            <option value="Twitter">
-                            <option value="Instagram">
-                            <option value="Friend/Family/Coworker Referral">
-                            <option value="Google Search">
-                            <option value="Google Playstore">
-                            <option value="Online Blog">
-                            <option value="local Newspaper">
-                            <option value="At an Event">
-                            <option value="Other">
-                        </datalist>
+                        <label class="form-label" for="reported-cases">Reported Cases</label>
+                        <input class="form-input data-reported-cases" type="number" placeholder="Reported Cases" name="reported-cases" required aria-required="true">
                     </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="total-hospital-beds">Total Hospital Beds</label>
+                        <input class="form-input data-total-hospital-beds" type="number" placeholder="Total Hospital Beds" name="total-hospital-beds" required aria-required="true">
+                    </div>
+
+                    
                     <div class="button">
-                        <button>CREATE ACCOUNT</button>
+                        <button class="data-go-estimate">SUBMIT</button>
                     </div>
                     
                 </div>
             </form>
             
         </div>
-        <div class="login-option">
-            <a href="#">Already have an account? Log In</a>
-        </div>
+    
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
